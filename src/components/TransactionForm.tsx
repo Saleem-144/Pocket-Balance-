@@ -77,7 +77,7 @@ export default function TransactionForm({ category, onClose, onTransactionAdded 
   // Save form data whenever inputs change
   React.useEffect(() => {
     saveFormData();
-  }, [description, amount, date, category]);
+  }, [description, amount, date, category, saveFormData]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
